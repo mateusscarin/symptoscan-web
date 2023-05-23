@@ -1,0 +1,66 @@
+:root {
+    --background: #e2e8f0;
+    --background-high-contrast: rgb(24, 24, 27);
+    --title: #9bc5ff;
+    --title-high-contrast: rgb(255 255 255);
+    --label: #475569;
+    --label-high-contrast: rgb(225, 225, 225);
+    --input-border: #94a3b8;
+    --input-border-high-contrast: #94a3b8;
+    --input-border-focus: #1e293b;
+    --input-border-focus-high-contrast: #1e293b;
+    --confirmation-button: #22c55e;
+    --confirmation-button-high-contrast: #22c55e;
+}
+
+.background {
+    background-color: var(--background);
+    color: black;
+}
+
+.background-high-contrast {
+    background-color: var(--background-high-contrast);
+    color: white;
+}
+
+.title {
+    color: var(--title);
+}
+
+.title-high-contrast {
+    color: var(--title-high-contrast);
+}
+
+.label {
+    color: var(--label);
+}
+
+.label-high-contrast {
+    color: var(--label-high-contrast);
+}
+
+.input {
+    border: 1px solid var(--input-border);
+}
+
+.input:focus {
+    border: 1px solid var(--input-border-focus);
+}
+
+.input-high-contrast {
+    border: 1px solid var(--input-border-high-contrast);
+}
+
+.input-high-contrast:focus {
+    border: 1px solid var(--input-border-focus-high-contrast);
+}
+
+.confirmation-button {
+    background-color: var(--confirmation-button);
+    color: white;
+}
+
+.confirmation-button-high-contrast {
+    background-color: var(--confirmation-button-high-contrast);
+    color: white;
+}

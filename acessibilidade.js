@@ -17,19 +17,72 @@ function fonte(e){
 }
 
 function alto_contraste(){
-	document.getElementById('conteudo').style.background = '#000';
-	document.getElementById('conteudo').style.color = '#fff';
-	document.getElementById('noticias').style.background = '#000';
-	document.getElementById('noticias').style.color = '#fff';
-	document.getElementById('rodape').style.background = '#000';
-	document.getElementById('rodape').style.color = '#fff';
+	const background = [...document.getElementsByClassName("background")];
+	const titles = [...document.getElementsByClassName("title")];
+	const labels = [...document.getElementsByClassName("label")];
+	const input = [...document.getElementsByClassName("input")];
+	const confirmationButtons = [...document.getElementsByClassName("confirmation-button")];
+
+	background.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
+	});
+
+	titles.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
+	});
+
+	labels.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
+	});
+
+	input.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
+	});
+
+	confirmationButtons.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
+	});
 }
 
 function cor_original(){
-	document.getElementById('conteudo').style.background = '#fff';
-	document.getElementById('conteudo').style.color = '#000';
-	document.getElementById('noticias').style.background = '#fff';
-	document.getElementById('noticias').style.color = '#000';
-	document.getElementById('rodape').style.background = '#fff';
-	document.getElementById('rodape').style.color = '#000';
+	const background = [...document.getElementsByClassName("background-high-contrast")];
+	const titles = [...document.getElementsByClassName("title-high-contrast")];
+	const labels = [...document.getElementsByClassName("label-high-contrast")];
+	const input = [...document.getElementsByClassName("input-high-contrast")];
+	const confirmationButtons = [...document.getElementsByClassName("confirmation-button-high-contrast")];
+
+	background.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => {
+			c = c.split("-high-contrast")[0];
+			return c;
+		}).join(/\s+/);
+	});
+
+	titles.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => {
+			c = c.split("-high-contrast")[0];
+			return c;
+		}).join(/\s+/);
+	});
+
+	labels.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => {
+			c = c.split("-high-contrast")[0];
+			return c;
+		}).join(/\s+/);
+	});
+
+	input.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => {
+			c = c.split("-high-contrast")[0];
+			return c;
+		}).join(/\s+/);
+	});
+
+	confirmationButtons.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => {
+			c = c.split("-high-contrast")[0];
+			return c;
+		}).join(/\s+/);
+	});
 }
