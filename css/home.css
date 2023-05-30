@@ -1,4 +1,5 @@
 :root {
+    --font-size: 100%; /** 16px **/
     --background: #e2e8f0;
     --background-high-contrast: rgb(24, 24, 27);
     --title: #9bc5ff;
@@ -25,42 +26,52 @@
 
 .title {
     color: var(--title);
+    font-size: var(--font-size);
 }
 
 .title-high-contrast {
     color: var(--title-high-contrast);
+    font-size: var(--font-size);
 }
 
 .label {
     color: var(--label);
+    font-size: var(--font-size);
 }
 
 .label-high-contrast {
     color: var(--label-high-contrast);
+    font-size: var(--font-size);
 }
 
 .input {
     border: 1px solid var(--input-border);
+    font-size: var(--font-size);
 }
 
 .input:focus {
     border: 1px solid var(--input-border-focus);
+    font-size: var(--font-size);
 }
 
 .input-high-contrast {
     border: 1px solid var(--input-border-high-contrast);
+    font-size: var(--font-size);
 }
 
 .input-high-contrast:focus {
     border: 1px solid var(--input-border-focus-high-contrast);
+    font-size: var(--font-size);
 }
 
 .confirmation-button {
     background-color: var(--confirmation-button);
     color: white;
+    font-size: var(--font-size);
 }
 
 .confirmation-button-high-contrast {
     background-color: var(--confirmation-button-high-contrast);
     color: white;
+    font-size: var(--font-size);
 }

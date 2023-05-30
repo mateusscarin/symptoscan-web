@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>Acessibilidade</title>
-		<script src="acessibilidade.js"></script>
-		<link rel="stylesheet" type="text/css" href="home.css">
-	</head>
+
+<head>
+	<title>Acessibilidade</title>
+	<script src="js/acessibilidade.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+
 <body class="background">
 	<style>
 		.accessibility {
@@ -12,13 +14,13 @@
 			position: fixed;
 			flex-direction: column;
 		}
-		.font-functions{}
 
-		.accessibility .keyboard-shortcode-functions{
+		.font-functions {}
+
+		.accessibility .keyboard-shortcode-functions {
 			display: flex;
 			flex-direction: column;
 		}
-
 	</style>
 	<header class="header">
 		<nav class="navigation-header">
@@ -31,13 +33,13 @@
 	</header>
 	<div class="accessibility">
 		<div class="font-functions">
-			<input type="button" value="A+" title="Aumentar tamanho da fonte">
-			<input type="button" value="A-" title="Diminuir tamanho da fonte">
-			<input type="button" value="Tamanho original" title="Tamanho original da fonte">
+			<input type="button" value="A+" title="Aumentar tamanho da fonte" onclick="alterar_fonte(10)">
+			<input type="button" value="A-" title="Diminuir tamanho da fonte" onclick="alterar_fonte(-10)">
+			<input type="button" value="Tamanho original" title="Tamanho original da fonte" onclick="fonte_original()">
 		</div>
 		<div class="theme-functions">
-			<input type="button" value="Alto Contraste" title="Tema alto contraste">
-			<input type="button" value="Cor Original" title="Tema original">
+			<input type="button" value="Alto Contraste" title="Tema alto contraste" onclick="alto_contraste()">
+			<input type="button" value="Cor Original" title="Tema original" onclick="cor_original()">
 		</div>
 		<div class="keyboard-shortcode-functions">
 			<a accesskey="1" href="#conteudo">[1] - Ir para as Conteúdo</a>
@@ -49,7 +51,7 @@
 		<div class="container">
 			<article class="content">
 				<section>
-					<h2>Conte�do</h2>
+					<h2 class="title">Conte�do</h2>
 					Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de
 					capivaris,
 					leite
