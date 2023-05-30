@@ -1,22 +1,34 @@
-function fonte(e){
+function fonte(e) {
 	var elemento = document.getElementsByClassName("mudarfonte");
 	var atual = elemento[0].style.fontSize;
-	
-	if(e == 'a'){
-		atual = parseInt(atual)+2+'px';
-	}else if(e == 'b'){
-		atual = parseInt(atual)-2+'px';
-	}else if(e == 'c'){
-		atual = 18+'px';
+
+	if (e == 'a') {
+		atual = parseInt(atual) + 2 + 'px';
+	} else if (e == 'b') {
+		atual = parseInt(atual) - 2 + 'px';
+	} else if (e == 'c') {
+		atual = 18 + 'px';
 	}
-	
-		
-	elemento[0].style.fontSize=atual;
-	elemento[1].style.fontSize=atual;
-	elemento[2].style.fontSize=atual;
+
+
+	elemento[0].style.fontSize = atual;
+	elemento[1].style.fontSize = atual;
+	elemento[2].style.fontSize = atual;
 }
 
-function alto_contraste(){
+function fonte_original() {
+	document.documentElement.style.setProperty("--font-size", "100%");
+}
+
+function alterar_fonte(tamanho) {
+	const style = window.getComputedStyle(document.documentElement);
+	const fontSize = style.getPropertyValue("--font-size");
+	let fontSizePercent = Number(fontSize.split("%")[0]);
+	let newFontSizeValue = fontSizePercent + tamanho;
+	document.documentElement.style.setProperty("--font-size", newFontSizeValue + "%");
+}
+
+function alto_contraste() {
 	const background = [...document.getElementsByClassName("background")];
 	const titles = [...document.getElementsByClassName("title")];
 	const labels = [...document.getElementsByClassName("label")];
@@ -44,7 +56,7 @@ function alto_contraste(){
 	});
 }
 
-function cor_original(){
+function cor_original() {
 	const background = [...document.getElementsByClassName("background-high-contrast")];
 	const titles = [...document.getElementsByClassName("title-high-contrast")];
 	const labels = [...document.getElementsByClassName("label-high-contrast")];
