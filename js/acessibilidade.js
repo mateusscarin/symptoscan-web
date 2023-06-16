@@ -34,6 +34,8 @@ function alto_contraste() {
 	const labels = [...document.getElementsByClassName("label")];
 	const input = [...document.getElementsByClassName("input")];
 	const confirmationButtons = [...document.getElementsByClassName("confirmation-button")];
+	const actionButtons = [...document.getElementsByClassName("action-button")];
+	const nav = [...document.getElementsByClassName("navigation-header")];
 
 	background.forEach(element => {
 		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
@@ -52,6 +54,14 @@ function alto_contraste() {
 	});
 
 	confirmationButtons.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
+	});
+
+	actionButtons.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
+	});
+
+	nav.forEach(element => {
 		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
 	});
 }
@@ -62,6 +72,8 @@ function cor_original() {
 	const labels = [...document.getElementsByClassName("label-high-contrast")];
 	const input = [...document.getElementsByClassName("input-high-contrast")];
 	const confirmationButtons = [...document.getElementsByClassName("confirmation-button-high-contrast")];
+	const actionButtons = [...document.getElementsByClassName("action-button-high-contrast")];
+	const nav = [...document.getElementsByClassName("navigation-header-high-contrast")];
 
 	background.forEach(element => {
 		element.className = element.className.split(/\s+/).map(c => {
@@ -92,6 +104,20 @@ function cor_original() {
 	});
 
 	confirmationButtons.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => {
+			c = c.split("-high-contrast")[0];
+			return c;
+		}).join(/\s+/);
+	});
+
+	actionButtons.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => {
+			c = c.split("-high-contrast")[0];
+			return c;
+		}).join(/\s+/);
+	});
+
+	nav.forEach(element => {
 		element.className = element.className.split(/\s+/).map(c => {
 			c = c.split("-high-contrast")[0];
 			return c;
