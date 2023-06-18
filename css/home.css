@@ -12,10 +12,14 @@
     --background-high-contrast: rgb(24, 24, 27);
     --title: rgb(24, 24, 27);
     --title-high-contrast: rgb(255 255 255);
+    --paragraph: rgb(24, 24, 27);
+    --paragraph-high-contrast: rgb(255 255 255);
     --label: #475569;
     --label-high-contrast: rgb(225, 225, 225);
+    --icons: #94a3b8;
+    --icons-high-contrast: #3b71bd;
     --input-border: #94a3b8;
-    --input-border-high-contrast: #94a3b8;
+    --input-border-high-contrast: #3061a7;
     --input-border-focus: #1e293b;
     --input-border-focus-high-contrast: #1e293b;
     --action-button: rgb(96 165 250);
@@ -24,6 +28,9 @@
     --confirmation-button-high-contrast: #22c55e;
     --text: rgb(24 24 27);
     --text-high-contrast: rgb(255 255 255);
+    --footer-bg-icons: rgb(14, 101, 201);
+    --footer-bg-icons-high-contrast: rgb(8, 52, 102);
+    --footer-bg-copyright: #94a3b8;
 
     font-family: 'Open Sans', sans-serif;
 }
@@ -32,7 +39,7 @@
 .accessibility {
     display: flex;
     position: fixed;
-    left: 90%;
+    left: 89%;
     top: 1rem;
     flex-direction: column;
     row-gap: .7rem;
@@ -104,6 +111,12 @@ nav ul>li:hover {
     scale: 110%;
 }
 
+section>p {
+    text-align: justify;
+    font-size: 1rem;
+    text-indent: 5rem;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -152,6 +165,11 @@ main {
 
 .title-high-contrast {
     color: var(--title-high-contrast);
+}
+
+.paragraph {
+    font-size: calc(1.1 * var(--font-size));
+    margin: 1rem 3rem;
 }
 
 .label,
@@ -210,6 +228,50 @@ main {
     cursor: pointer;
 }
 
+footer {
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons-high-contrast {
+    background-color: var(--footer-bg-icons-high-contrast);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--footer-bg-copyright);
+}
+
+.copyright {
+    padding: 0.5rem 0;
+    font-size: calc(0.8 * var(--font-size));
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    background-color: var(--footer-bg-icons);
+}
+
+.icons>div, .icons-high-contrast>div {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons>div>i {
+    color: #e2e8f0;
+
+}
+
 @media (max-width: 992px) {
     .accessibility {
         flex-direction: row;
@@ -218,9 +280,9 @@ main {
         column-gap: 1rem;
     }
 
-    .accessibility > * {
-        font-size: 28px!important;
-        padding: .6rem!important;
+    .accessibility>* {
+        font-size: 28px !important;
+        padding: .6rem !important;
     }
 
     .landing-image {
@@ -231,16 +293,25 @@ main {
         width: 30%;
     }
 
-    .title, .title-high-contrast {
+    .title,
+    .title-high-contrast {
         font-size: calc(5.2 * var(--font-size));
     }
 
-    .label, .label-high-contrast {
+    .label,
+    .label-high-contrast {
         font-size: calc(2.2 * var(--font-size));
     }
 
-    .action-button, .confirmation-button, .action-button-high-contrast, .confirmation-button-high-contrast {
+    .action-button,
+    .confirmation-button,
+    .action-button-high-contrast,
+    .confirmation-button-high-contrast {
         font-size: calc(1.6 * var(--font-size));
         padding: 1.3rem;
+    }
+
+    .paragraph {
+        margin: 2rem 3rem;
     }
 }

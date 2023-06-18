@@ -36,6 +36,8 @@ function alto_contraste() {
 	const confirmationButtons = [...document.getElementsByClassName("confirmation-button")];
 	const actionButtons = [...document.getElementsByClassName("action-button")];
 	const nav = [...document.getElementsByClassName("navigation-header")];
+	const paragraphs = [...document.getElementsByClassName("paragraph")];
+	const icons = [...document.getElementsByClassName("icons")];
 
 	background.forEach(element => {
 		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
@@ -62,6 +64,10 @@ function alto_contraste() {
 	});
 
 	nav.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
+	});
+
+	icons.forEach(element => {
 		element.className = element.className.split(/\s+/).map(c => c.concat("-high-contrast")).join(/\s+/);
 	});
 }
@@ -74,6 +80,7 @@ function cor_original() {
 	const confirmationButtons = [...document.getElementsByClassName("confirmation-button-high-contrast")];
 	const actionButtons = [...document.getElementsByClassName("action-button-high-contrast")];
 	const nav = [...document.getElementsByClassName("navigation-header-high-contrast")];
+	const icons = [...document.getElementsByClassName("icons-high-contrast")];
 
 	background.forEach(element => {
 		element.className = element.className.split(/\s+/).map(c => {
@@ -118,6 +125,13 @@ function cor_original() {
 	});
 
 	nav.forEach(element => {
+		element.className = element.className.split(/\s+/).map(c => {
+			c = c.split("-high-contrast")[0];
+			return c;
+		}).join(/\s+/);
+	});
+
+	icons.forEach(element => {
 		element.className = element.className.split(/\s+/).map(c => {
 			c = c.split("-high-contrast")[0];
 			return c;
