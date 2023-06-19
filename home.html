@@ -1,124 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>Acessibilidade</title>
-		<script src="js/acessibilidade.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	</head>
-	<body>
-		<header>
-			<input type="button" value="A+" onclick="fonte('a')">
-			<input type="button" value="A-" onclick="fonte('b')">
-			<input type="button" value="100%" onclick="fonte('c')">
-		
-			<input type="button" value="Alto Contraste" onclick="alto_contraste()">
-			<input type="button" value="Cor Original" onclick="cor_original()">
-			
-			<a accesskey="1" href="#conteudo">[1] - Ir para as Conteúdo</a>
-			<a accesskey="2" href="#noticias">[2] - Ir para as Notícias</a>
-			<a accesskey="3" href="#rodape">[3] - Ir para as Rodapé</a>
-		</header>
-		<nav>
+
+<head>
+	<title>symptoscan</title>
+	<script src="js/acessibilidade.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+
+<body class="background">
+	<header class="header">
+		<nav class="navigation-header">
 			<ul class="menu">
-				<li><a href="home.html">HOME</a></li>
-				<li><a href="sobre.html">SOBRE</a></li>
-				<li><a href="imagens.html">IMAGENS</a></li>
-				<li><a href="receitas.html">RECEITAS</a></li>
-				<li><a href="tabela.html">AGENDA</a></li>
+				<li tabindex="1" title="Ir para home"><a class="label" href="home.html">HOME</a></li>
+				<li tabindex="2" title="Ir para conteúdo"><a class="label" href="#about">SOBRE</a></li>
+				<li tabindex="3" title="Ir para contato"><a class="label" href="#contact">CONTATO</a></li>
 			</ul>
 		</nav>
-
-	
-	<div id="conteudo" class="mudarfonte" style="font-size:18px;">
-	<h2>Conte�do</h2>
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
+	</header>
+	<div class="accessibility">
+		<input type="button" class="action-button" value="A+" title="Aumentar tamanho da fonte"
+			onclick="alterar_fonte(10)">
+		<input type="button" class="action-button" value="A-" title="Diminuir tamanho da fonte"
+			onclick="alterar_fonte(-10)">
+		<input type="button" class="action-button" value="Tamanho original" title="Tamanho original da fonte"
+			onclick="fonte_original()">
+		<input type="button" class="action-button" value="Alto Contraste" title="Tema alto contraste"
+			onclick="alto_contraste()">
+		<input type="button" class="action-button" value="Cor Original" title="Tema original" onclick="cor_original()">
 	</div>
-	
-<div id="noticias" class="mudarfonte" style="font-size:18px;">
-<h2>Not�cias</h2>
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
+	<main>
+		<section class="landing-image">
+			<img src="./img/logo_tg_app.svg" alt="Symptoscan logo">
+			<div>
+				<h1 class="title">Symptoscan</h1>
+				<h3 class="label">Como você está se sentindo hoje?</h3>
 
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
+				<div
+					style="display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 1rem; margin-top: 1.5rem;">
+					<button class="action-button">Cadastro</button>
+					<button class="confirmation-button">Baixe o aplicativo</button>
+				</div>
+			</div>
+		</section>
+		<section>
+			<p class="paragraph">O diagnóstico clínico é uma das etapas mais importantes para iniciar o tratamento de
+				doenças. Uma boa
+				análise ajuda muito o médico na sua tomada de decisão sobre os métodos e procedimentos que serão
+				adotados para minimizar ou neutralizar a enfermidade. A tecnologia, por sua vez, tem participado para
+				melhorar cada vez mais a precisão dessas análises. Segundo a Associação Brasileira de Medicina
+				Diagnóstica (ABRAMED, 2023), “A medicina tem utilizado cada vez mais recursos tecnológicos para atingir
+				seus objetivos: promoção de bem-estar, prevenção e aumentar as chances de cura de doenças”. </p>
+			<p class="paragraph">A contribuição mais recente para a saúde mundial das ferramentas tecnológicas, nesse
+				sentido, foi durante
+				a pandemia instaurada no final de 2019. Devido à continuidade dos investimentos em pesquisa e recursos
+				tecnológicos, juntamente com estudos científicos realizados anteriormente, foi possível desenvolver e
+				implantar vacinas seguras em tempo recorde (GONÇALVES, 2021). Logo, a tecnologia tornou-se essencial
+				para a medicina, sobretudo para a identificação e controle de doenças.</p>
+			<p class="paragraph"> Nos últimos anos, a análise de exames laboratoriais também dispõe de ferramentas
+				tecnológicas e
+				inteligência artificial. Elas têm o objetivo de proporcionar uma previsibilidade sobre doenças que podem
+				se desenvolver futuramente nos pacientes. A plataforma CalcLab, por exemplo, consegue interpretar exames
+				internacionais e nacionais e contém uma base de dados de estudos que envolvem diversos diagnósticos
+				clínicos (INFORCHANNEL, 2023).</p>
+			<p class="paragraph"> Nesse contexto, este trabalho apresenta a construção de um sistema capaz de produzir
+				diagnósticos
+				plausíveis de enfermidades já conhecidas utilizando inteligência artificial e algoritmos de
+				classificação. A aplicação dessas técnicas contribuiu muito para reconhecer epidemias que, até então,
+				não se tinha conhecimento algum. Ao identificar os principais sintomas percebidos pelo paciente e suas
+				respectivas intensidades, é possível estimar (com base em análises anteriores já validadas e modelos
+				estatísticos) qual é o distúrbio que o afeta e direcioná-lo ao profissional de saúde correto para o
+				início do tratamento.</p>
+		</section>
+		<section id="about">
+			<p class="paragraph">Os serviços de saúde, por mais completos e especializados que sejam, apresentam algumas
+				barreiras que
+				impedem que o paciente interaja com eles ou aproveite o máximo das suas qualidades. No Brasil, as UPA’S
+				são a escolha preferida da população devido a ineficiência dos demais serviços na qualidade de
+				atendimento, comodidade e facilidade de acesso e, por conta disso, estão em estado de sobrecarga
+				(AMARANTE et al., 2020). Logo, percebe-se que a população tem a iniciativa de procurar o médico quando
+				está doente, mas opta pela abordagem emergencial ao invés da especializada por conta das dificuldades
+				enfrentadas.</p>
+			<p class="paragraph">Essas desvantagens estão diretamente relacionadas ao funcionamento dos serviços e como
+				o atendimento é
+				oferecido. Fatores como o horário de funcionamento, disponibilidade dos médicos, a ausência de
+				informação sobre os serviços oferecidos e o tempo de espera são os principais motivos que levam os
+				pacientes a desistir de procurar ajuda médica ou se abster de consultas e tratamentos iniciados
+				anteriormente (FARIAS et al, 2020). Assim, é nítido que a maneira como a informação chega até o enfermo
+				não é objetiva e que as dificuldades envolvem, quase sempre, a obrigatoriedade do paciente de ter que se
+				locomover até uma unidade de saúde, ainda que seja apenas para relatar quais são os sintomas que o
+				afetam, para que só então ele seja colocado em uma fila de atendimento.</p>
+			<p class="paragraph">Diante das dificuldades apresentadas anteriormente este projeto busca melhorar a
+				distribuição dos
+				pacientes entre os diferentes serviços de saúde remotamente. Para atingir esse objetivo, foi criado o
+				software SymptoScan, um aplicativo móvel que utiliza conceitos de IA e ML para criar análises médicas
+				superficiais e, a partir delas, sugere os melhores locais de atendimento ao paciente. Sendo assim, o
+				tamanho das filas iniciais de atendimento e o fenômeno de sobrecarga poderão sofrer uma redução
+				considerável facilitando assim a vida de todos stakeholders envolvidos.</p>
+			</p>
+		</section>
+	</main>
+	<footer id="contact">
+		<div class="icons">
+			<div>
+				<i class="fab fa-facebook fa-3x " title="Logo Facebook"></i>
+				<i class="fab fa-instagram fa-3x" title="Logo Instagram"></i>
+				<i class="fab fa-whatsapp fa-3x" title="Logo WhatsApp"></i>
+			</div>
+		</div>
+		<div class="copyright">
+			<span>©Todos os direitos reservados&nbsp;<a href="https://www.instagram.com/">SysmptoScan</span>
+		</div>
+	</footer>
+</body>
 
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-
-Detraxit consequat et quo num tendi nada. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. T� deprimidis, eu conhe�o uma cachacis que pode alegrar sua vidis. Quem manda na minha terra sou euzis!
-	</div>	
-
-<div id="rodape" class="mudarfonte" style="font-size:18px;">
-<h2>Rodap�</h2>
-Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di m�, boa gentis num �. Leite de capivaris, leite de mula manquis sem cabe�a. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Si u mundo t� muito paradis? Toma um m� que o mundo vai girarzis!
-</div>	
-	
-	</body>
 </html>
